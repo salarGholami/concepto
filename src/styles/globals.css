@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* =============================
+   فونت Shabnam - همه وزن‌ها
+============================= */
+
+@font-face {
+  font-family: "Shabnam";
+  src: url("/fonts/shabnam/Shabnam-Thin.woff2") format("woff2"),
+    url("/fonts/shabnam/Shabnam-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shabnam";
+  src: url("/fonts/shabnam/Shabnam-Light.woff2") format("woff2"),
+    url("/fonts/shabnam/Shabnam-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shabnam";
+  src: url("/fonts/shabnam/Shabnam.woff2") format("woff2"),
+    url("/fonts/shabnam/Shabnam.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shabnam";
+  src: url("/fonts/shabnam/Shabnam-Medium.woff2") format("woff2"),
+    url("/fonts/shabnam/Shabnam-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Shabnam";
+  src: url("/fonts/shabnam/Shabnam-Bold.woff2") format("woff2"),
+    url("/fonts/shabnam/Shabnam-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =============================
+   پالت رنگ‌ها (تیف و شید)
+============================= */
+@theme {
+
+  --color-primary: #0d6efd;
+
+  /* Primary-tint */
+  --color-primary-tint-100: #e4efff;
+  --color-primary-tint-200: #c9dfff;
+  --color-primary-tint-300: #aecffe;
+  --color-primary-tint-400: #93bffe;
+  --color-primary-tint-500: #79aefe;
+  --color-primary-tint-600: #5e9efe;
+  --color-primary-tint-700: #438efd;
+  --color-primary-tint-800: #287efd;
+
+  /* Primary-shade */
+  --color-primary-shade-100: #0260eb;
+  --color-primary-shade-200: #0254cd;
+  --color-primary-shade-300: #0148b0;
+  --color-primary-shade-400: #013c93;
+  --color-primary-shade-500: #013075;
+  --color-primary-shade-600: #012458;
+  --color-primary-shade-700: #00183b;
+  --color-primary-shade-800: #000c1d;
+
+  /* Secondary-tint */
+  --color-secondary-tint-100: #fff9e6;
+  --color-secondary-tint-200: #fff2cc;
+  --color-secondary-tint-300: #ffecb3;
+  --color-secondary-tint-400: #ffe599;
+  --color-secondary-tint-500: #ffdf80;
+  --color-secondary-tint-600: #ffd866;
+  --color-secondary-tint-700: #ffd24d;
+  --color-secondary-tint-800: #ffcb33;
+
+  /* Secondary-shade */
+  --color-secondary-shade-100: #fabb00;
+  --color-secondary-shade-200: #dba300;
+  --color-secondary-shade-300: #bb8c00;
+  --color-secondary-shade-400: #9c7500;
+  --color-secondary-shade-500: #7d5d00;
+  --color-secondary-shade-600: #5e4600;
+  --color-secondary-shade-700: #3e2f00;
+  --color-secondary-shade-800: #1f1700;
+
+  /* Neutral */
+  --color-neutral-100: #e9eaee;
+  --color-neutral-200: #cbced7;
+  --color-neutral-300: #aeb2c0;
+  --color-neutral-400: #9095aa;
+  --color-neutral-500: #737993;
+  --color-neutral-600: #5b6176;
+  --color-neutral-700: #444859;
+  --color-neutral-800: #2e303b;
+  --color-neutral-900: #17181e;
+  --color-neutral-950: #0f0f0f;
+
+  /* Error */
+  --color-state-error: #dc3545;
+  --color-state-error-light: #ffeef0;
+
+  /* Success */
+  --color-state-success: #28a745;
+  --color-state-success-light: #d8ffe1;
+
+  /* Warning */
+  --color-state-warning: #ffbe00;
+  --color-state-warning-light: #fff1c9;
+
+  /* Font */
+  --font-shabnam: "Shabnam", sans-serif;
+}
+
+body {
+  font-family: var(--font-shabnam);
+  background-color: var(--color-neutral-50);
+}

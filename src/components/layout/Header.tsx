@@ -3,18 +3,24 @@
 import { useState } from "react";
 import { FiLogIn, FiMenu, FiX } from "react-icons/fi";
 import { FaBolt } from "react-icons/fa";
-
 import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
 import IconButton from "../atoms/IconButton";
-import SearchBox from "../molecules/SearchBox";
 import Navbar from "../organisms/Navbar";
+import { useRouter } from "next/navigation";
+import Input from "../atoms/Input";
+import { BiSearch } from "react-icons/bi";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const handleRegister = () => {
+    return router.push("/signin");
+  };
 
   return (
-    <header className="w-full bg-white shadow-sm py-3 px-4">
+    <header className="w-full shadow-sm py-3 px-4">
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
         {/* موبایل: منو + لوگو + سرچ دسکتاپ */}
         <div className="flex items-center gap-4 flex-1">
@@ -26,8 +32,16 @@ export default function Header() {
             />
           </div>
           <Logo />
-          <div className="hidden md:flex items-center w-full max-w-md">
-            <SearchBox />
+          <div className="hidden md:flex items-center w-full max-w-md relative">
+            <BiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+
+            <Input
+              type="tel"
+              dir="rtl"
+              placeholder="جستجو کسب و کار"
+              className="w-full border  bg-neutral-100 border-gray-300 rounded-lg py-2 pr-10 pl-3 text-right
+             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
           </div>
         </div>
 
@@ -37,7 +51,7 @@ export default function Header() {
             <FaBolt size={14} />
             <span className="hidden md:inline">رایگان شروع کن!</span>
           </Button>
-          <Button variant="outline">
+          <Button variant="outline" onClick={handleRegister}>
             <FiLogIn size={14} />
             <span className="hidden md:inline">ورود / ثبت‌نام</span>
           </Button>
@@ -45,8 +59,15 @@ export default function Header() {
       </div>
 
       {/* سرچ موبایل */}
-      <div className="container md:hidden mt-2">
-        <SearchBox />
+      <div className="container md:hidden mt-2 relative">
+        <BiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+        <Input
+          type="tel"
+          dir="rtl"
+          placeholder="جستجو کسب و کار"
+          className="w-full border  bg-neutral-100 border-gray-300 rounded-lg py-2 pr-10 pl-3 text-right
+             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
       </div>
 
       {/* منو */}

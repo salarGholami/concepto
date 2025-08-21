@@ -10,7 +10,7 @@ const protectedRoutes: Record<UserRole, string[]> = {
 };
 
 // مسیرهای عمومی
-const publicPaths = ["/", "/home", "/about", "/contact", "/login", "/register"];
+const publicPaths = ["/", "/home", "/about", "/contact", "/signin", "/singup"];
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;

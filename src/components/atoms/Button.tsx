@@ -1,25 +1,36 @@
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface ButtonProps {
-  children: ReactNode;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "outline";
-  onClick?: () => void;
+  children: ReactNode;
 }
 
-export default function  Button({
-  children,
+export default function Button({
   variant = "primary",
-  onClick,
+  children,
+  className = "",
+  disabled,
+  ...rest
 }: ButtonProps) {
-  const base =
-    "flex items-center gap-1 rounded-lg text-sm px-3 py-2 transition";
-  const styles =
+  const baseStyle =
+    "px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center justify-center";
+
+  const variantStyle =
     variant === "primary"
-      ? "bg-primary text-white hover:bg-primary-dark"
-      : "border hover:bg-gray-100";
+      ? "bg-primary text-white hover:bg-primary/90 cursor-pointer"
+      : "border border-primary text-primary hover:bg-primary hover:text-white cursor-pointer";
+
+  const disabledStyle =
+    "bg-gray-300 text-gray-500 border-gray-300 opacity-50 cursor-not-allowed";
 
   return (
-    <button onClick={onClick} className={`${base} ${styles}`}>
+    <button
+      disabled={disabled}
+      className={`${baseStyle} ${
+        disabled ? disabledStyle : variantStyle
+      } ${className}`}
+      {...rest}
+    >
       {children}
     </button>
   );

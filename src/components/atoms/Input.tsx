@@ -1,10 +1,20 @@
-import { InputHTMLAttributes } from "react";
+"use client";
 
-export default function Input(props: InputHTMLAttributes<HTMLInputElement>) {
+import { forwardRef, InputHTMLAttributes } from "react";
+
+const Input = forwardRef<
+  HTMLInputElement,
+  InputHTMLAttributes<HTMLInputElement>
+>(({ className = "", ...props }, ref) => {
   return (
     <input
+      ref={ref}
       {...props}
-      className={`w-full pr-9 pl-3 py-2 bg-neutral-100 rounded-lg outline-none text-sm ${props.className}`}
+      className={`w-full rounded-lg outline-none text-sm transition ${className}`}
     />
   );
-}
+});
+
+Input.displayName = "Input";
+
+export default Input;

@@ -2,10 +2,8 @@ import { ReactNode } from "react";
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-md p-6 bg-white rounded shadow">
-        {children}
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 ">
+      <div className="col-span-12 w-full">{children}</div>
     </div>
   );
 }

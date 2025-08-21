@@ -1,6 +1,8 @@
+"use client";
+
+import Button from "@/components/atoms/Button";
+import Input from "@/components/atoms/Input";
 import { useState } from "react";
-import Button from "@/components/ui/Button";
-import Input from "@/components/ui/Input";
 
 export default function SignupPage() {
   const [name, setName] = useState("");
@@ -31,7 +33,7 @@ export default function SignupPage() {
         placeholder="Password"
         type="password"
       />
-      <Button type="submit">Sign Up</Button>
+      <Button>Sign Up</Button>
     </form>
   );
 }

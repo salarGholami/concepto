@@ -1,11 +1,12 @@
 import Button from "@/components/atoms/Button";
+import StatsSection from "@/components/organisms/StatsSection";
 import Image from "next/image";
 import { FaBolt } from "react-icons/fa";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
 export default async function HomePage() {
   return (
-    <div className="grid grid-cols-12 gap-8 py-10 px-4 md:px-8">
+    <div className="grid grid-cols-12 gap-8">
       {/* متن و دکمه‌ها */}
       <div className="col-span-12 flex flex-col justify-center items-center text-center gap-6">
         <h1 className="text-2xl md:text-5xl font-extrabold text-primary-shade-700 leading-snug">
@@ -90,6 +91,12 @@ export default async function HomePage() {
               "linear-gradient(to top, white 50%, rgba(255,255,255,0) 100%)",
           }}
         />
+      </div>
+
+      <div className="col-span-12 w-full">
+        <div className="mx-8">
+          <StatsSection />
+        </div>
       </div>
     </div>
   );

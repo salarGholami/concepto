@@ -1,4 +1,5 @@
 import Button from "@/components/atoms/Button";
+import CategoryList from "@/components/organisms/CategoryList";
 import StatsSection from "@/components/organisms/StatsSection";
 import Image from "next/image";
 import { FaBolt } from "react-icons/fa";
@@ -96,6 +97,11 @@ export default async function HomePage() {
       <div className="col-span-12 w-full">
         <div className="mx-8">
           <StatsSection />
+        </div>
+      </div>
+      <div className="col-span-12 w-full">
+        <div className="mx-8">
+          <CategoryList />
         </div>
       </div>
     </div>

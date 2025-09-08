@@ -12,7 +12,7 @@ export default function StatItem({ value, label }: StatItemProps) {
   return (
     <div className="flex items-center gap-2">
       <div className="relative flex items-center ">
-        <div className="absolute w-14 h-14 rounded-full bg-yellow-200" />
+        <div className="absolute w-14 h-14 rounded-full bg-secondary-tint-300" />
         <StatNumber value={value} />
       </div>
       <StatLabel text={label} />

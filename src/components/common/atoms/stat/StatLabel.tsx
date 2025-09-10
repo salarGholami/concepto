@@ -5,5 +5,9 @@ type StatLabelProps = {
 };
 
 export default function StatLabel({ text }: StatLabelProps) {
-  return <span className="text-sm text-bold md:text-xl text-neutral-800">{text}</span>;
+  return (
+    <span className="text-sm md:text-xl font-bold text-neutral-800">
+      {text}
+    </span>
+  );
 }

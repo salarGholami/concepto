@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+
 import ReactQueryProvider from "@/providers/ReactQueryProvider";
 import { ReactNode } from "react";
+import Header from "@/components/common/organisms/Header";
+import Footer from "@/components/common/organisms/Footer";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

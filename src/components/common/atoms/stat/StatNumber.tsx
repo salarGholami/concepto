@@ -2,7 +2,6 @@
 
 import PersianNumber from "../PersianNumber";
 
-
 type StatNumberProps = {
   value: number;
   className?: string;

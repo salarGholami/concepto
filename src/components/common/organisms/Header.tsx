@@ -6,7 +6,7 @@ import { FaBolt } from "react-icons/fa";
 import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
 import IconButton from "../atoms/IconButton";
-import Navbar from "../organisms/Navbar";
+import Navbar from "./Navbar";
 import { useRouter } from "next/navigation";
 import Input from "../atoms/Input";
 import { BiSearch } from "react-icons/bi";

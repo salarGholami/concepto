@@ -3,6 +3,7 @@ import Hero from "@/components/common/organisms/Hero";
 import BrandShowcase from "@/components/common/organisms/BrandShowcase";
 import StatsSection from "@/components/common/organisms/StatsSection";
 import FeaturesSection from "@/components/common/organisms/FeaturesSection";
+import CategoriesSection from "@/components/common/organisms/CategoriesSection";
 
 export default function HomeSection() {
   return (
@@ -14,8 +15,15 @@ export default function HomeSection() {
           <div>
             <StatsSection />
           </div>
-          <div className="md:mx-40">
+          <div className="lg:mx-40">
             <FeaturesSection />
+          </div>
+        </div>
+      </div>
+      <div className="col-span-12 w-full">
+        <div className="flex flex-col justify-center mx-10 ">
+          <div className="lg:mx-40">
+            <CategoriesSection />
           </div>
         </div>
       </div>

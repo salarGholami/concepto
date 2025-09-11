@@ -1,8 +1,19 @@
-// components/common/atoms/ImageWrapper.tsx
 import Image, { ImageProps } from "next/image";
 
-export default function ImageWrapper(props: ImageProps) {
+type ImageWrapperProps = Omit<ImageProps, "alt"> & {
+  alt?: string; // اختیاریش می‌کنیم
+};
+
+export default function ImageWrapper({
+  alt = "",
+  className,
+  ...props
+}: ImageWrapperProps) {
   return (
-    <Image {...props} className={`object-contain ${props.className || ""}`} />
+    <Image
+      {...props}
+      alt={alt}
+      className={`object-contain ${className || ""}`}
+    />
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
-import Button from "@/components/atoms/Button";
-import Input from "@/components/atoms/Input";
+
+import Button from "@/components/common/atoms/Button";
+import Input from "@/components/common/atoms/Input";
 import { useState } from "react";
 
 export default function SignupPage() {

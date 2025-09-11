@@ -1,12 +1,12 @@
 "use client";
 
-import Input from "@/components/atoms/Input";
-import Logo from "@/components/atoms/Logo";
 import Image from "next/image";
 import { useState } from "react";
 import { MdOutlineLightbulb } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
-import Button from "@/components/atoms/Button";
+import Input from "@/components/common/atoms/Input";
+import Button from "@/components/common/atoms/Button";
+import Logo from "@/components/common/atoms/Logo";
 
 export default function SignInPage() {
   const [phone, setPhone] = useState("");

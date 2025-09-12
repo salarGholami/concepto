@@ -28,7 +28,7 @@ const featuresData = [
 
 export default function FeaturesSection() {
   return (
-    <div className="flex flex-col items-center md:flex-row gap-6 md:gap-8 my-20 lg:my-40 w-full">
+    <div className="flex flex-col items-center md:flex-row gap-6 md:gap-8 my-20 lg:mt-40 w-full">
       {featuresData.map((feature) => (
         <FeatureCard
           key={feature.id}

@@ -4,6 +4,7 @@ import BrandShowcase from "@/components/common/organisms/BrandShowcase";
 import StatsSection from "@/components/common/organisms/StatsSection";
 import FeaturesSection from "@/components/common/organisms/FeaturesSection";
 import CategoriesSection from "@/components/common/organisms/CategoriesSection";
+import PopularCompaniesSection from "@/components/common/organisms/PopularCompaniesSection";
 
 export default function HomeSection() {
   return (
@@ -26,6 +27,9 @@ export default function HomeSection() {
             <CategoriesSection />
           </div>
         </div>
+      </div>
+      <div className="col-span-12 w-full mb-40">
+        <PopularCompaniesSection />
       </div>
     </div>
   );

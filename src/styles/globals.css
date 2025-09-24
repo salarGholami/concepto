@@ -53,7 +53,6 @@
    پالت رنگ‌ها (تیف و شید)
 ============================= */
 @theme {
-
   --color-primary: #0d6efd;
 
   /* Primary-tint */
@@ -139,4 +138,11 @@ body {
   .no-spinner[type="number"] {
     -moz-appearance: textfield; /* Firefox */
   }
+}
+
+.swiper-navigation-icon {
+  background-color: white;
+  padding: 12px;
+  border-radius: 50px;
+  color: black;
 }

@@ -22,7 +22,6 @@ export default function Header() {
   return (
     <header className="w-full shadow-sm py-3 px-4">
       <div className="container max-w-7xl mx-auto flex items-center justify-between">
-        {/* موبایل: منو + لوگو + سرچ دسکتاپ */}
         <div className="flex items-center gap-4 flex-1">
           <div className="md:hidden">
             <IconButton
@@ -45,7 +44,6 @@ export default function Header() {
           </div>
         </div>
 
-        {/* دکمه‌ها */}
         <div className="flex gap-2 shrink-0">
           <Button variant="primary">
             <FaBolt size={14} />
@@ -58,7 +56,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* سرچ موبایل */}
       <div className="container md:hidden mt-2 relative">
         <BiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
         <Input
@@ -70,7 +67,6 @@ export default function Header() {
         />
       </div>
 
-      {/* منو */}
       <Navbar isOpen={isOpen} />
     </header>
   );

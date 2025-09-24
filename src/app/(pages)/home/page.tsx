@@ -1,4 +1,4 @@
-import HomeSection from "@/components/pages/home/Home";
+import HomeSection from "@/app/(pages)/home/section/Home";
 
 export default async function HomePage() {
   return (

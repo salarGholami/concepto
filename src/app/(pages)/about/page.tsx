@@ -1,6 +1,6 @@
 "use client";
 
-import AboutSection from "@/components/pages/about/About";
+import AboutSection from "@/app/(pages)/about/sections/About";
 
 const AboutPage = () => {
   return (

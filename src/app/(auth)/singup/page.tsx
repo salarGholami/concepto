@@ -1,6 +1,5 @@
 "use client";
 
-
 import Button from "@/components/common/atoms/Button";
 import Input from "@/components/common/atoms/Input";
 import { useState } from "react";

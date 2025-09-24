@@ -1,4 +1,3 @@
-// components/common/atoms/Text.tsx
 import { ReactNode } from "react";
 
 type TextProps = {

@@ -6,6 +6,7 @@ import FeaturesSection from "@/app/(pages)/home/components/organisms/feature/Fea
 import CategoriesSection from "@/app/(pages)/home/components/organisms/category/CategoriesSection";
 import PopularCompaniesSection from "@/app/(pages)/home/components/organisms/company/PopularCompaniesSection";
 import JobOpportunitiesSection from "../components/organisms/JobCard/JobCarousel";
+import LastNewsSection from "../components/organisms/news/LastNewsSection";
 
 export default function HomeSection() {
   return (
@@ -29,12 +30,16 @@ export default function HomeSection() {
           </div>
         </div>
       </div>
-      <div className="col-span-12 w-full md:mb-40">
+      <div className="col-span-12 w-full md:mb-20">
         <PopularCompaniesSection />
       </div>
-      <div className="col-span-12 w-full ">
+      <div className="col-span-12 w-full">
         <JobOpportunitiesSection />
       </div>
+      <div className="col-span-12 w-full ">
+        <LastNewsSection />
+      </div>
+      <div className="col-span-12 w-full md:mb-40">2</div>
     </div>
   );
 }

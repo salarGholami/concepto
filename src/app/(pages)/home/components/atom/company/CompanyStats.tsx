@@ -2,8 +2,6 @@
 
 import Badge from "@/components/common/atoms/Badge";
 
-
-
 interface CompanyStatsProps {
   investors: number;
   audience: number;
@@ -14,7 +12,7 @@ export default function CompanyStats({
   audience,
 }: CompanyStatsProps) {
   return (
-    <div className="flex justify-between w-full">
+    <div className="flex justify-between gap-2 w-full">
       <Badge label="مخاطبین جدید" value={audience} />
       <Badge label="سرمایه‌گذاران جدید" value={investors} />
     </div>

@@ -3,13 +3,13 @@
 import { useState } from "react";
 import { FiLogIn, FiMenu, FiX } from "react-icons/fi";
 import { FaBolt } from "react-icons/fa";
-import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
 import IconButton from "../atoms/IconButton";
 import Navbar from "./Navbar";
 import { useRouter } from "next/navigation";
 import Input from "../atoms/Input";
 import { BiSearch } from "react-icons/bi";
+import Logo from "../atoms/Logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Header() {
               ariaLabel="toggle menu"
             />
           </div>
-          <Logo />
+          <Logo src="/images/logo/logo.png" />
           <div className="hidden md:flex items-center w-full max-w-md relative">
             <BiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
 

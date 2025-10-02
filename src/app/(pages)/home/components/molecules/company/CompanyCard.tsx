@@ -5,7 +5,6 @@ import { CiLocationOn } from "react-icons/ci";
 import CompanyStats from "../../atom/company/CompanyStats";
 import PersianNumber from "@/utils/PersianNumber";
 import truncateText from "@/utils/truncateText";
-import { categories } from "@/data/categories";
 
 interface CompanyCardProps {
   name: string;
@@ -35,7 +34,7 @@ export default function CompanyCard({
 
   return (
     <div
-      className={`group w-90 flex-shrink-0 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition overflow-hidden transform hover:-translate-y-2 duration-300 ${
+      className={`group w-80 flex-shrink-0 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition overflow-hidden transform hover:-translate-y-2 duration-300 ${
         !isLast ? "border-r border-gray-200" : ""
       }`}
     >
@@ -73,7 +72,7 @@ export default function CompanyCard({
         {/* توضیحات */}
         <div className="flex flex-col text-neutral-600 pt-2">
           <span className="text-sm leading-relaxed">
-            {truncateText(description, 85)}
+            {truncateText(description, 75)}
           </span>
           <div className="flex justify-between items-center pt-3 text-sm text-neutral-500">
             <span className="flex items-center gap-1">

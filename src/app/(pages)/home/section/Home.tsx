@@ -1,4 +1,3 @@
-// components/pages/home/HomeSection.tsx
 import Hero from "@/app/(pages)/home/components/organisms/landing/Hero";
 import BrandShowcase from "@/app/(pages)/home/components/organisms/landing/BrandShowcase";
 import StatsSection from "@/app/(pages)/home/components/organisms/stat/StatsSection";
@@ -7,6 +6,7 @@ import CategoriesSection from "@/app/(pages)/home/components/organisms/category/
 import PopularCompaniesSection from "@/app/(pages)/home/components/organisms/company/PopularCompaniesSection";
 import JobOpportunitiesSection from "../components/organisms/JobCard/JobCarousel";
 import LastNewsSection from "../components/organisms/news/LastNewsSection";
+import RecentEventsSection from "../components/organisms/event/RecentEventsSection";
 
 export default function HomeSection() {
   return (
@@ -39,7 +39,9 @@ export default function HomeSection() {
       <div className="col-span-12 w-full ">
         <LastNewsSection />
       </div>
-      <div className="col-span-12 w-full md:mb-40">2</div>
+      <div className="col-span-12 w-full md:my-40">
+        <RecentEventsSection />
+      </div>
     </div>
   );
 }

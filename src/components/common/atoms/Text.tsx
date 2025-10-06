@@ -6,11 +6,5 @@ type TextProps = {
 };
 
 export default function Text({ children, className }: TextProps) {
-  return (
-    <p
-      className={`text-sm md:text-xl text-primary-shade-500 ${className || ""}`}
-    >
-      {children}
-    </p>
-  );
+  return <p className={`text-sm md:text-xl ${className || ""}`}>{children}</p>;
 }

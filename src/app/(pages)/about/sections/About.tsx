@@ -2,9 +2,9 @@
 
 import HeroSection from "../components/organism/hero/HeroSection";
 import ServicesSection from "../components/organism/services/ServicesSection";
+import StorySection from "../components/organism/storyUs/StorySection";
 
 // import DecorativeCircle from "../../../../components/common/atoms/DecorativeCircle";
-
 
 export default function AboutPage() {
   return (
@@ -20,6 +20,9 @@ export default function AboutPage() {
         </div>
         <div className="">
           <ServicesSection />
+        </div>
+        <div className="mt-8 md:mt-0">
+          <StorySection />
         </div>
       </div>
     </section>

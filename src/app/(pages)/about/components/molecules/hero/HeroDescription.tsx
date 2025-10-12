@@ -2,7 +2,7 @@
 
 import Text from "@/components/common/atoms/Text";
 
-export default function AboutDescription() {
+export default function HeroDescription() {
   return (
     <div className="flex flex-col gap-4 items-center text-center">
       <Text className="max-w-sm md:max-w-2xl text-black md:font-semibold">

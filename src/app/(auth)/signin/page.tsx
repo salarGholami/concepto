@@ -36,7 +36,7 @@ export default function SignInPage() {
           <div className="px-8 lg:px-40 py-8 md:py-12">
             <div className="flex flex-col items-center mb-6">
               <div className="text-blue-600 font-bold text-2xl flex items-center justify-center gap-2">
-                <Logo />
+                <Logo src="/images/logo/logo.png" />
                 <MdOutlineLightbulb size={35} />
               </div>
               <div className="my-2 md:my-6">

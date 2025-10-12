@@ -3,7 +3,7 @@ import { Company } from "@/types/company";
 export const companies: Company[] = [
   {
     name: "شرکت علی بابا",
-    categoryId: "تجارت الکارونیک", 
+    categoryId: "تجارت الکارونیک",
     description:
       "علی‌بابا برندی از هلدینگ پرافتخار توشا است، سامانه‌ای که به‌واسطه پشتیبانی شما در سکوی اول گردشگری کشور ایستاده.",
     logo: "/images/brands/brand-logos/full/alibaba.png",
@@ -53,7 +53,7 @@ export const companies: Company[] = [
     description:
       "هر آنچه که نیاز دارید با بهترین قیمت از دیجی‌کالا بخرید! موبایل، لپ‌تاپ، لباس، لوازم خانگی و...",
     logo: "/images/brands/brand-logos/full/digikala.png",
-    image: "/images/brands/brand-images/digikala.png",
+    image: "/images/brands/brand-images/digiKala.png",
     investors: 442,
     audience: 25120,
     location: "تهران ، ایران",
@@ -82,7 +82,7 @@ export const companies: Company[] = [
     location: "تهران ، ایران",
     star: 4.1,
     news: {
-      pic: "/",
+      pic: "/images/brands/news/alibaba/1.png",
       title: "اسنپ رکورد خود را با بیش از ۵ میلیون سفر روزانه شکست",
       description:
         "در ماه پایانی سال ۱۴۰۲، اسنپ رکورد ۵ میلیون و ۱۳۹ هزار و ۶۵ سفر روزانه در سرویس خودرو و باکس را زد. این رکورد در روز چهارشنبه، دوم اسفند، ثبت شد.",

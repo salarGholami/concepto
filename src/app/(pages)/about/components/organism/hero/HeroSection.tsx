@@ -1,16 +1,19 @@
 "use client";
 
 import Heading from "@/app/(pages)/home/components/atom/landing/Heading";
-import AboutDescription from "../molecules/AboutDescription";
 import Button from "@/components/common/atoms/Button";
+import HeroDescription from "../../molecules/hero/HeroDescription";
 
-export default function AboutSection() {
+export default function HeroSection() {
   return (
     <div className="relative z-10 container mx-auto py-20 text-center flex flex-col gap-6 items-center">
-      <Heading className="text-black">با سرچ کمتر بهترین نتیجرو بگیر!</Heading>
-
-      <AboutDescription />
-
+      <div className="mb-6 flex flex-col gap-4">
+        {" "}
+        <Heading className="text-black">
+          با سرچ کمتر بهترین نتیجرو بگیر!
+        </Heading>
+        <HeroDescription />
+      </div>
       <div className="flex gap-4 items-center">
         <svg
           width="60"
